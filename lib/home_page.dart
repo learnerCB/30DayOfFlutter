@@ -5,8 +5,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Hello world"),
+    int days = 30;
+    String name = 'Chetan';
+    bool male = true;
+    const pi = 22 / 7;
+    return Center(
+      child: Text("Hello world to $days days of flutter by $pi"),
     );
   }
 }

@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:codepur/homepage.dart';
+import 'package:codepur/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
-  MyApp({super.key});
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Catlog'),
+        ),
+        drawer: Drawer(),
         body: HomePage(),
       ),
     );
