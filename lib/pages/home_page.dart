@@ -1,3 +1,4 @@
+import 'package:codepur/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,10 +12,13 @@ class HomePage extends StatelessWidget {
     // const pi = 22 / 7;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Catlog'),
+        title: const Text(
+          'Catlog App',
+          style: TextStyle(color: Colors.black),
+        ),
         centerTitle: true,
       ),
-      drawer: const Drawer(),
+      drawer: MyDrawer(),
       body: Center(
         child: Text("Hello world to $days days of flutter by $name"),
       ),
