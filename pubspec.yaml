@@ -85,7 +85,9 @@ flutter:
       fonts:
         - asset: font/Lobster-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+    - family: Rubik
+      fonts:
+        - asset: font/Rubik-VariableFont_wght.ttf 
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
