@@ -6,7 +6,8 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var imgUrl = "https://2211chetanbalpande.github.io/portfolio/chetan.jpeg";
+    var imgUrl =
+        "https://crdms.images.consumerreports.org/c_lfill,w_598/prod/products/cr/models/400116-wireless-portable-headphones-apple-airpods-pro-10009323.png";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -20,9 +21,7 @@ class MyDrawer extends StatelessWidget {
                   margin: EdgeInsets.zero,
                   accountName: const Text("Chetan Balpande"),
                   accountEmail: const Text("chetanbalpande12@gmail.com"),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: NetworkImage(imgUrl),
-                  ),
+                  currentAccountPicture: Image.network(imgUrl),
                 ),
               ),
               const ListTile(
