@@ -12,7 +12,10 @@ class HomePage extends StatelessWidget {
     // const pi = 22 / 7;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Catlog'),
+        title: const Text(
+          'Catlog App',
+          style: TextStyle(color: Colors.black),
+        ),
         centerTitle: true,
       ),
       drawer: MyDrawer(),
